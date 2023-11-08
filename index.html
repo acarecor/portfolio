@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ana Arellano - Portfolio</title>
+    <meta
+      name="description"
+      content="Ana Arellano is a full-stack web developer based in Berlin"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-----favicon------------------------------------------------------------------------->
+    <link
+      rel="shortcut icon"
+      href="assets/faviconaarellano.png"
+      type="image/x-icon"
+    />
+    <!-----link to the google font roboto------------------------------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-----reset default css------------------------------------------------------------>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-----css stylesheet------------------------------------------------>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!-----setting the viewport------------------------------------------------------------>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Import font awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/7086f04b82.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div>
+      <header class="page-header">
+        <!----Here is the navigation bar-------------------------------------->
+        <nav class="navbar" id="navbar">
+          <a href="#profile">
+            <img
+              src="assets/logo-no-background.png"
+              class="page-header__item page-header__item--logo"
+              alt="Personal logo of Ana Arellano, a text logo in uppercase letters that consist of my name"
+            />
+          </a>
+          <i
+            class="fa-solid fa-bars fa-2xl menu-icon"
+            style="color: #ffffff"
+          ></i>
+          <div class="navbar-collapsed page-header__item">
+            <a href="#about-me" role="menuitem" class="navigation-list__item"
+              >About me</a
+            >
+            <a href="#projects" role="menuitem" class="navigation-list__item"
+              >Projects</a
+            >
+            <a href="#contact" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="profile" id="profile">
+          <!----here will be my introduction photo------------------------------>
+          <div class="profile_container">
+            <img
+              src="assets/ana-arellano2.png"
+              class="profile_portrait"
+              alt="Ana Arellano Portrait"
+            />
+            <div class="profile_div">
+            <h1>"Hello World"</h1>
+            <h3>My name is Ana Arellano.</h3>
+            <h3>Full-stack web developer based in Berlin.</h3>
+            <a href="https://github.com/acarecor" download target="_blank">
+              <button type="button">Check out some of my code</button><br />
+            </a>
+           </div>
+          </div>
+        </section>
+        <!----about me section------------------------------------------------------->
+        <section class="about-me" id="about-me">
+          <div class="about_container">
+            <h1>ABOUT ME</h1>
+            <p>
+              Hey I’m Ana ! I am a full-stack web developer motivated by my
+              enthusiasm for overcoming coding challenges and crafting agile,
+              high-performance applications that seek to simplify users' lives.
+            </p>
+            <p>
+              With a background as a engineer, my previous experience
+              includes working as a project manager, where I was able to
+              demonstrate my creative and analytical problem solving skills. I
+              love challenges and enjoy exploring the endless opportunities that
+              web application development offers. Focusing on details is one of
+              my main strengths, as I consider it essential to create efficient
+              and engaging technology solutions that have a positive impact.
+            </p>
+
+            <div class="skills-container">
+              <h1>SKILLS</h1>
+              <ul class="skills-list">
+                <div class="skills-list_div">
+                  <h3>Frontend development</h3>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Angular</li>
+                  <li>Angular Material</li>
+                  <li>TypeScript</li>
+                  <li>Bootstrap</li>
+                  <li>React Native</li>
+                  <li>jQuery</li>
+                  <li>Html5, CSS</li>
+                </div>
+                <div class="skills-list_div">
+                  <h3>Backend development</h3>
+                  <li>RESTful API</li>
+                  <li>Express</li>
+                  <li>MongoDB, SQL, PostgreSQL</li>
+                  <li>Node.js</li>
+                </div>
+                <div class="skills-list_div">
+                  <h3>Testing</h3>
+                  <li>TDD and BDD</li>
+                  <li>Jest, Jest-Cucumber</li>
+                  <li>Puppeteer</li>
+                  <li>Postman</li>
+                </div>
+              </ul>
+            </div>
+            <!--<a href="files/cv.pdf" class="button about-general__list--button" download target="_blank"> Download my
+                    CV
+
+                </a>-->
+          </div>
+        </section>
+        <!----projects section------------------------------------------------------->
+        <section class="projects" id="projects">
+          <div class="project-container">
+            <h1>PROJECTS</h1>
+            <!----here will be my work ------------------------------>
+            <div class="project-list">
+              
+              <div class="project-list__item">
+                <h2>CINEFLIX</h2>
+                <img src="assets/cineflix2.png" class="project-img"/>
+                
+                <p>
+                  CINEFLIX is a client-side application built using React, uses
+                  the server-side MOVIE_API(myFlix RESTful API) and the database
+                  (mongo DB atlas).
+                </p>
+                
+                <ul class="tech-list">
+                  <li>MongoDB</li>
+                  <li>Express</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>React Bootstrap</li>
+                </ul>
+
+                <a
+                  href="https://myflix-cineflix.netlify.app"
+                  class="project-list__item-link"
+                  download
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square fa-xl" style="color:black;"></i></a
+                >
+                <a
+                  href="https://github.com/acarecor/CINEFLIX-App"
+                  class="project-list__item-link"
+                  ><i class="fa-solid fa-code fa-xl" style="color: black;"></i></a
+                >
+            
+              </div>
+              <div class="project-list__item">
+                <h2>Movie API</h2>
+                <img src="assets/movieapi1.png" class="project-img" />
+                <p>
+                  Movie_API is a RESTful API coded from scratch using Node.js
+                  and provides users with access to information about different
+                  movies, directors and genres. Users can register, update their
+                  personal information and create a list of their favorite
+                  movies. The database was built using MongoDB and the business
+                  logic was modeled using Mongoose.
+                </p>
+                <ul class="tech-list">
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                  <li>Express</li>
+                  <li>Html</li>
+                </ul>
+                <a
+                  href="https://github.com/acarecor/MOVIE_API"
+                  class="project-list__item-link"
+                  download
+                  target="_blank"
+                  ><i class="fa-solid fa-code fa-xl" style="color: black;"></i></a
+                >
+              </div>
+
+              <div class="project-list__item">
+                <h2>POKEDEX App</h2>
+                <img src="assets/pokedex2.png" class="project-img"/>
+                <p>
+                  Pokedex App is a web application built using JavaScrip Vanilla
+                  and also JQuery. The application must load information from an
+                  external API and allow the visualization of data points.
+                  Pokedex displays information (in the form of a list) about 150
+                  Pokemons. When the name of a pokemon is selected, a modal
+                  appears showing more details about it. The details shown are:
+                  pokemon image, height and types.
+                </p>
+                <ul class="tech-list">
+                  <li>JavaScript</li>
+                  <li>Bootstrap</li>
+                  <li>JQuery</li>
+                  <li>Html</li>
+                  <li>Css</li>
+                </ul>
+
+                <a
+                  href="https://acarecor.github.io/PokeDex/"
+                  class="project-list__item-link"
+                  download
+                  target="_blank"
+                  >
+                  <i class="fa-solid fa-arrow-up-right-from-square fa-xl" style="color:black;"></i></a
+                >
+                <a
+                  href="https://github.com/acarecor/PokeDex"
+                  class="project-list__item-link"
+                  download
+                  target="_blank"
+                  >
+                  <i class="fa-solid fa-code fa-xl" style="color: black;"></i></a
+                >
+              </div>
+
+              <div class="project-list__item">
+                <h2>MEET</h2>
+                <img src="assets/meet1.png" class="project-img" style="width: 40%"/>
+                <p>
+                  Meet App is a serverless progressive web application (PWA)
+                  built with React using a test-driven development (TDD)
+                  technique. The app uses the Google Calendar API to fetch
+                  upcoming events.
+                </p>
+                <ul class="tech-list">
+                  <li>React</li>
+                  <li>AWS Lambda</li>
+                  <li>Jest</li>
+                  <li>Jest-Cucumber</li>
+                  <li>Puppeteer</li>
+                  <li>PWA</li>
+                  <li>lighthouse</li>
+                  <li>Recharts</li>
+                  <li>Google Calendar API</li>
+                </ul>
+                <a href="https://acarecor.github.io/meet" class="project-list__item-link"><i class="fa-solid fa-arrow-up-right-from-square fa-xl" style="color:black;"></i></a>
+                <a
+                  href="https://github.com/acarecor/meet"
+                  class="project-list__item-link"
+                  ><i class="fa-solid fa-code fa-xl" style="color: black;"></i></a
+                >
+              </div>
+              <div class="project-list__item">
+                <h2>ChatApp</h2>
+                <img src="assets/chatapp1.png" class="project-img" style="width: 60%"/>
+                
+                <p>
+                  ChatApp is a mobile app created with React Native. The app
+                  will provide users with a chat interface and image sharing
+                  options, it also has advanced features such as offline storage
+                  and location.
+                </p>
+                <ul class="tech-list">
+                  <li>React Native</li>
+                  <li>Expo</li>
+                  <li>React Native Gifted Chat Library</li>
+                  <li>Google Firebase Cloud Storage</li>
+                  <li>Firestore DB</li>
+                  <li>Android Studio Emulator</li>
+                  <li>Expo ImagePicker and Location</li>
+                </ul>
+
+                <a
+                  href="https://github.com/acarecor/ChatApp"
+                  class="project-list__item-link"
+                  ><i class="fa-solid fa-code fa-xl" style="color: black;"></i></a
+                >
+              </div>
+              <div class="project-list__item">
+                <h2>MYFLIX-App</h2>
+                <img src="assets/myflix1.png" class="project-img" />
+                <img src="assets/myflix2.png" class="project-img" />
+                <p>
+                  MYFLIX app a client-side application using Angular , which is
+                  based on existing server-side code (RESTful API: Movi_API and
+                  database in Atlas: MongoDB).
+                </p>
+                <ul class="tech-list">
+                  <li>Angular</li>
+                  <li>TypeScript</li>
+                  <li>Angular Material</li>
+                  <li>MongoDB</li>
+                  <li>Express</li>
+                  <li>Node.js</li>
+                  <li>Typedoc</li>
+                </ul>
+                <a href="https://acarecor.github.io/MYFLIX-App/"
+                class="project-list__item-link"
+                  ><i class="fa-solid fa-arrow-up-right-from-square fa-xl" style="color:black;"></i></a
+                >
+                <a
+                  href="https://github.com/acarecor/MYFLIX-App"
+                  class="project-list__item-link"
+                  ><i class="fa-solid fa-code fa-xl" style="color: black;"></i></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact" id="contact">
+          <h1>Let's talk</h1>
+          <p>
+            If you would like to learn more about what I can bring to your team
+            , feel free to contact me via the email provided below. I look
+            forward to establishing communication with you.
+          </p>
+          <a href="href=mailto:acarellanoc@gmail.com"> Email: acarellanoc@gmail.com </a> 
+          
+        </section>
+      </main>
+      <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+          <!----github logo--------------------------------------->
+          <a
+            href="https://github.com/acarecor"
+            download
+            target="_blank"
+            class="social-media__item"
+          >
+            <img src="assets/github.svg" alt="Github" />
+          </a>
+          <!----linkedin logo--------------------------------------->
+          <a
+            href="https://www.linkedin.com"
+            download
+            target="_blank"
+            class="social-media__item"
+          >
+            <img src="assets/linkedin.svg" alt="linkedin" />
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      const navBar = document.querySelector(".navbar");
+      const hamburgerButton = document.querySelector(".menu-icon");
+      const navLinks = document.querySelector(".navbar-collapsed");
+
+      hamburgerButton.addEventListener("click", () => {
+        navBar.classList.toggle("navbar-responsive");
+        navLinks.classList.toggle("navbar-links-responsive");
+      });
+    </script>
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
