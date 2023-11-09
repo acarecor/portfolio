@@ -338,9 +338,6 @@
       margin: 0;
     }
 
-    h1 {
-      font-size: 30px;
-    }
   
     .navigation-list li {
       display: block;
@@ -354,15 +351,13 @@
     }
 
     .profile_container{
-      padding: 60px 0 0 0;
+      padding: 0;
       align-items: center;
       align-content: center;
       height: 100vh;
       font-size: medium;
     }
-    .profile_div{
-      margin-top: 20px;
-    }
+
   
     .page-header__item--logo {
       max-width: 60px;
@@ -425,8 +420,26 @@
         margin-top: 100px;
         content-visibility: auto ;
       }
+      .project-list__item-link i{
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+      }
 
   }
   
 
-  
+  @media all and (max-width: 450px){
+    .profile_div{
+      margin: 50px;
+      font-size: medium;
+    }
+    .profile_portrait {
+      float: none;
+      margin: 0 auto;
+      width: 180px;
+      margin-top: 50px;
+    }
+
+  }
