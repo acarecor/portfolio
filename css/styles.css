@@ -441,5 +441,8 @@
       width: 180px;
       margin-top: 50px;
     }
+    .project-container{
+      margin: 0 30px 30px;
+    }
 
   }
